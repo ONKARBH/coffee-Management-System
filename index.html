@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Management System</title>
+  <link rel="stylesheet" href="cstyle.css">
+</head>
+<body>
+<!-- Navigation Section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#coffee">Coffee Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#booking">Table Booking</a></li>
+        <li><a href="#order-section">Order</a></li> 
+        <li><a href="#chief">Chief</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+<section id="home">
+  <h1>Welcome to Our Coffee Shop</h1>
+  <h2>Dolly Ki Tapri</h2>
+  <p>Enjoy a variety of freshly brewed coffee.</p>
+</section>
+
+  <!-- Coffee Menu Section -->
+  <section id="coffee">
+    <h2>Coffee Menu</h2>
+    <div class="menu-card">
+      <div class="item">
+        <img src="coffee2.jfif" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>RS-300.00</p>
+      </div>
+      <div class="item">
+        <img src="coffee2.jfif" alt="Cappuccino">
+        <h3>Cappuccino</h3>
+        <p>RS-400.00</p>
+      </div>
+      <div class="item">
+        <img src="coffee2.jfif" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>RS-300.00</p>
+      </div>
+      <div class="item">
+        <img src="coffee2.jfif" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>RS-300.00</p>
+      </div>
+      <div class="item">
+        <img src="coffee2.jfif" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>RS-300.00</p>
+      </div>
+      <div class="item">
+        <img src="coffee2.jfif" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>RS-300.00</p>
+      </div>
+      <div class="item">
+        <img src="coffee2.jfif" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>RS-300.00</p>
+      </div>
+      <div class="item">
+        <img src="coffee2.jfif" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>RS-300.00</p>
+      </div>
+      <!-- Add more items as needed -->
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="coffee1.jfif" alt="Coffee Image 1">
+      <img src="coffee1.jfif" alt="Coffee Image 2">
+      <!-- Add more images as needed -->
+    </div>
+  </section>
+
+  <!-- Chief Section -->
+  <section id="chief">
+    <h2>Our Chiefs</h2>
+    <div class="menu-card">
+      <div class="item">
+        <img src="chief.jpg" alt="Chief Ranjit">
+        <h3>Ranjit</h3>
+      </div>
+      <div class="item">
+        <img src="chief.jpg" alt="Chief Kiran">
+        <h3>Kiran</h3>
+      </div>
+      <div class="item">
+        <img src="chief.jpg" alt="Chief Mahesh">
+        <h3>Mahesh</h3>
+      </div>
+      <!-- Add more chiefs as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Table Booking Section -->
+  <section id="booking">
+    <h2>Book a Table</h2>
+    <form id="booking-form" action="result.html">
+      <label for="booking-name">Your Name:</label>
+      <input type="text" id="booking-name" name="name" placeholder="Your Name" required>
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" placeholder="Number of Guests" required>
+
+      <label for="datetime">Date and Time:</label>
+      <input type="datetime-local" id="datetime" name="datetime" required>
+
+      <button type="submit">Book Table</button>
+    </form>
+  </section>
+
+  <!-- Order Section -->
+<section id="order-section">
+  <h2>Online Coffee Order</h2>
+
+  <form id="order-form">
+    <input type="text" id="customer-name" placeholder="Your Name" required>
+    
+    <select id="coffee-type" required>
+      <option value="coffee" disabled selected>Select Coffee Type</option>
+      <option value="Espresso">Espresso</option>
+      <option value="Cappuccino">Cappuccino</option>
+      <option value="Latte">Latte</option>
+      <option value="americano">americano</option>
+      <option value="caffe macchieto">caffe macchieto</option>
+      <option value="lungo">lungo</option>
+      <option value="drip coffee">drip coffee</option>
+      <option value="Long black">Long black</option>
+      <option value="cold brew">cold brew</option>
+      <option value="flat white">flat white</option>
+      <option value="iced coffee">iced coffee</option>
+      <option value="irish coffee">irish coffee/option>
+      <option value="red eye">red eye</option>
+      <option value="galao ">galao</option>
+      <option value="frappe">frappe</option>
+      <option value="caffe macchiato">caffe macchiato</option>
+    </select>
+
+    <select id="coffee-size" required>
+      <option value="" disabled selected>Select Size</option>
+      <option value="Small">Small</option>
+      <option value="Medium">Medium</option>
+      <option value="Large">Large</option>
+    </select>
+
+    <button type="submit">Place Order</button>
+  </form>
+
+  <h3>Order Summary</h3>
+  <table id="order-table">
+    <thead>
+      <tr>
+        <th>Customer Name</th>
+        <th>Coffee Type</th>
+        <th>Size</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</section>
+  <!-- Footer Section -->
+  <footer>
+    <p>Follow us on:</p>
+    <ul>
+      <li><a href="https://www.facebook.com/ajit_hake_/" target="_blank">Facebook</a></li>
+      <li><a href="https://www.instagram.com/ajit_hake_/" target="_blank">Instagram</a></li>
+      <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+      <li><a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a></li>
+      
+    </ul>
+    <p>This website created by: Kit Boys</p>
+  </footer>
+
+  <script src="cjavascript.js"></script>
+</body>
+</html>
